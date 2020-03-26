@@ -1,0 +1,13 @@
+##########################################################
+###################  生产环境的profile  ###################
+##########################################################
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:mysql://47.103.105.200:3306/homecare?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL
+    username: root
+    password: Pass@word!123
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+logging:
+  level.root: info

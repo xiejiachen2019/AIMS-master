@@ -1,0 +1,2 @@
+2020-03-15 10:50:37.313 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.aims.core.persistence.mapper]' package. Please check your configuration.
+2020-03-15 10:50:37.449 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.aims.ser]' package. Please check your configuration.

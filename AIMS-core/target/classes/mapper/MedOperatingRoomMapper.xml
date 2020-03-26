@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aims.core.persistence.mapper.MedOperatingRoomMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.aims.core.persistence.entity.MedOperatingRoom">
+                    <id column="ROOM_NO" property="roomNo" />
+                    <result column="DEPT_CODE" property="deptCode" />
+                    <result column="LOCATION" property="location" />
+                    <result column="STATUS" property="status" />
+                    <result column="BED_ID" property="bedId" />
+                    <result column="BED_LABEL" property="bedLabel" />
+                    <result column="MONITOR_CODE" property="monitorCode" />
+                    <result column="BRANCH_NO" property="branchNo" />
+                    <result column="SAM_SPACE" property="samSpace" />
+                    <result column="PATIENT_ID" property="patientId" />
+                    <result column="VISIT_ID" property="visitId" />
+                    <result column="OPER_ID" property="operId" />
+                    <result column="BED_TYPE" property="bedType" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            ROOM_NO, DEPT_CODE, LOCATION, STATUS, BED_ID, BED_LABEL, MONITOR_CODE, BRANCH_NO, SAM_SPACE, PATIENT_ID, VISIT_ID, OPER_ID, BED_TYPE
+        </sql>
+
+</mapper>

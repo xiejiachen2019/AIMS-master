@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aims.core.persistence.mapper.MedPatMasterIndexMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.aims.core.persistence.entity.MedPatMasterIndex">
+                    <id column="PATIENT_ID" property="patientId" />
+                    <result column="INP_NO" property="inpNo" />
+                    <result column="NAME" property="name" />
+                    <result column="NAME_PHONETIC" property="namePhonetic" />
+                    <result column="SEX" property="sex" />
+                    <result column="DATE_OF_BIRTH" property="dateOfBirth" />
+                    <result column="BIRTH_PLACE" property="birthPlace" />
+                    <result column="CITIZENSHIP" property="citizenship" />
+                    <result column="NATION" property="nation" />
+                    <result column="ID_NO" property="idNo" />
+                    <result column="IDENTITY" property="identity" />
+                    <result column="CHARGE_TYPE" property="chargeType" />
+                    <result column="UNIT_IN_CONTRACT" property="unitInContract" />
+                    <result column="MAILING_ADDRESS" property="mailingAddress" />
+                    <result column="ZIP_CODE" property="zipCode" />
+                    <result column="PHONE_NUMBER_HOME" property="phoneNumberHome" />
+                    <result column="PHONE_NUMBER_BUSINESS" property="phoneNumberBusiness" />
+                    <result column="NEXT_OF_KIN" property="nextOfKin" />
+                    <result column="RELATIONSHIP" property="relationship" />
+                    <result column="NEXT_OF_KIN_ADDR" property="nextOfKinAddr" />
+                    <result column="NEXT_OF_KIN_ZIP_CODE" property="nextOfKinZipCode" />
+                    <result column="NEXT_OF_KIN_PHONE" property="nextOfKinPhone" />
+                    <result column="LAST_VISIT_DATE" property="lastVisitDate" />
+                    <result column="VIP_INDICATOR" property="vipIndicator" />
+                    <result column="CREATE_DATE" property="createDate" />
+                    <result column="OPERATOR" property="operator" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            PATIENT_ID, INP_NO, NAME, NAME_PHONETIC, SEX, DATE_OF_BIRTH, BIRTH_PLACE, CITIZENSHIP, NATION, ID_NO, IDENTITY, CHARGE_TYPE, UNIT_IN_CONTRACT, MAILING_ADDRESS, ZIP_CODE, PHONE_NUMBER_HOME, PHONE_NUMBER_BUSINESS, NEXT_OF_KIN, RELATIONSHIP, NEXT_OF_KIN_ADDR, NEXT_OF_KIN_ZIP_CODE, NEXT_OF_KIN_PHONE, LAST_VISIT_DATE, VIP_INDICATOR, CREATE_DATE, OPERATOR
+        </sql>
+
+</mapper>

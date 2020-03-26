@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aims.core.persistence.mapper.MedPatVisitMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.aims.core.persistence.entity.MedPatVisit">
+                    <id column="PATIENT_ID" property="patientId" />
+                    <result column="VISIT_ID" property="visitId" />
+                    <result column="DEPT_ADMISSION_TO" property="deptAdmissionTo" />
+                    <result column="ADMISSION_DATE_TIME" property="admissionDateTime" />
+                    <result column="DEPT_DISCHARGE_FROM" property="deptDischargeFrom" />
+                    <result column="DISCHARGE_DATE_TIME" property="dischargeDateTime" />
+                    <result column="OCCUPATION" property="occupation" />
+                    <result column="MARITAL_STATUS" property="maritalStatus" />
+                    <result column="IDENTITY" property="identity" />
+                    <result column="ARMED_SERVICES" property="armedServices" />
+                    <result column="DUTY" property="duty" />
+                    <result column="TOP_UNIT" property="topUnit" />
+                    <result column="SERVICE_SYSTEM_INDICATOR" property="serviceSystemIndicator" />
+                    <result column="UNIT_IN_CONTRACT" property="unitInContract" />
+                    <result column="CHARGE_TYPE" property="chargeType" />
+                    <result column="WORKING_STATUS" property="workingStatus" />
+                    <result column="INSURANCE_TYPE" property="insuranceType" />
+                    <result column="INSURANCE_NO" property="insuranceNo" />
+                    <result column="SERVICE_AGENCY" property="serviceAgency" />
+                    <result column="MAILING_ADDRESS" property="mailingAddress" />
+                    <result column="ZIP_CODE" property="zipCode" />
+                    <result column="NEXT_OF_KIN" property="nextOfKin" />
+                    <result column="RELATIONSHIP" property="relationship" />
+                    <result column="NEXT_OF_KIN_ADDR" property="nextOfKinAddr" />
+                    <result column="NEXT_OF_KIN_ZIPCODE" property="nextOfKinZipcode" />
+                    <result column="NEXT_OF_KIN_PHONE" property="nextOfKinPhone" />
+                    <result column="PATIENT_CLASS" property="patientClass" />
+                    <result column="ADMISSION_CAUSE" property="admissionCause" />
+                    <result column="CONSULTING_DATE" property="consultingDate" />
+                    <result column="PAT_ADM_CONDITION" property="patAdmCondition" />
+                    <result column="CONSULTING_DOCTOR" property="consultingDoctor" />
+                    <result column="ADMITTED_BY" property="admittedBy" />
+                    <result column="EMER_TREAT_TIMES" property="emerTreatTimes" />
+                    <result column="ESC_EMER_TIMES" property="escEmerTimes" />
+                    <result column="SERIOUS_COND_DAYS" property="seriousCondDays" />
+                    <result column="CRITICAL_COND_DAYS" property="criticalCondDays" />
+                    <result column="ICU_DAYS" property="icuDays" />
+                    <result column="CCU_DAYS" property="ccuDays" />
+                    <result column="SPEC_LEVEL_NURS_DAYS" property="specLevelNursDays" />
+                    <result column="FIRST_LEVEL_NURS_DAYS" property="firstLevelNursDays" />
+                    <result column="SECOND_LEVEL_NURS_DAYS" property="secondLevelNursDays" />
+                    <result column="AUTOPSY_INDICATOR" property="autopsyIndicator" />
+                    <result column="BLOOD_TYPE" property="bloodType" />
+                    <result column="BLOOD_TYPE_RH" property="bloodTypeRh" />
+                    <result column="INFUSION_REACT_TIMES" property="infusionReactTimes" />
+                    <result column="BLOOD_TRAN_TIMES" property="bloodTranTimes" />
+                    <result column="BLOOD_TRAN_VOL" property="bloodTranVol" />
+                    <result column="BLOOD_TRAN_REACT_TIMES" property="bloodTranReactTimes" />
+                    <result column="DECUBITAL_ULCER_TIMES" property="decubitalUlcerTimes" />
+                    <result column="ALERGY_DRUGS" property="alergyDrugs" />
+                    <result column="ADVERSE_REACTION_DRUGS" property="adverseReactionDrugs" />
+                    <result column="MR_VALUE" property="mrValue" />
+                    <result column="MR_QUALITY" property="mrQuality" />
+                    <result column="FOLLOW_INDICATOR" property="followIndicator" />
+                    <result column="FOLLOW_INTERVAL" property="followInterval" />
+                    <result column="FOLLOW_INTERVAL_UNITS" property="followIntervalUnits" />
+                    <result column="DIRECTOR" property="director" />
+                    <result column="ATTENDING_DOCTOR" property="attendingDoctor" />
+                    <result column="DOCTOR_IN_CHARGE" property="doctorInCharge" />
+                    <result column="DISCHARGE_DISPOSITION" property="dischargeDisposition" />
+                    <result column="TOTAL_COSTS" property="totalCosts" />
+                    <result column="TOTAL_PAYMENTS" property="totalPayments" />
+                    <result column="CATALOG_DATE" property="catalogDate" />
+                    <result column="CATALOGER" property="cataloger" />
+                    <result column="RESERVED01" property="reserved01" />
+                    <result column="RESERVED02" property="reserved02" />
+                    <result column="RESERVED03" property="reserved03" />
+                    <result column="RESERVED04" property="reserved04" />
+                    <result column="RESERVED05" property="reserved05" />
+                    <result column="RESERVED06" property="reserved06" />
+                    <result column="RESERVED07" property="reserved07" />
+                    <result column="RESERVED08" property="reserved08" />
+                    <result column="RESERVED09" property="reserved09" />
+                    <result column="RESERVED10" property="reserved10" />
+                    <result column="RESERVED_DATE01" property="reservedDate01" />
+                    <result column="RESERVED_DATE02" property="reservedDate02" />
+                    <result column="BODY_HEIGHT" property="bodyHeight" />
+                    <result column="BODY_WEIGHT" property="bodyWeight" />
+                    <result column="PATIENT_CONDITION" property="patientCondition" />
+                    <result column="ABNORMAL" property="abnormal" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            PATIENT_ID, VISIT_ID, DEPT_ADMISSION_TO, ADMISSION_DATE_TIME, DEPT_DISCHARGE_FROM, DISCHARGE_DATE_TIME, OCCUPATION, MARITAL_STATUS, IDENTITY, ARMED_SERVICES, DUTY, TOP_UNIT, SERVICE_SYSTEM_INDICATOR, UNIT_IN_CONTRACT, CHARGE_TYPE, WORKING_STATUS, INSURANCE_TYPE, INSURANCE_NO, SERVICE_AGENCY, MAILING_ADDRESS, ZIP_CODE, NEXT_OF_KIN, RELATIONSHIP, NEXT_OF_KIN_ADDR, NEXT_OF_KIN_ZIPCODE, NEXT_OF_KIN_PHONE, PATIENT_CLASS, ADMISSION_CAUSE, CONSULTING_DATE, PAT_ADM_CONDITION, CONSULTING_DOCTOR, ADMITTED_BY, EMER_TREAT_TIMES, ESC_EMER_TIMES, SERIOUS_COND_DAYS, CRITICAL_COND_DAYS, ICU_DAYS, CCU_DAYS, SPEC_LEVEL_NURS_DAYS, FIRST_LEVEL_NURS_DAYS, SECOND_LEVEL_NURS_DAYS, AUTOPSY_INDICATOR, BLOOD_TYPE, BLOOD_TYPE_RH, INFUSION_REACT_TIMES, BLOOD_TRAN_TIMES, BLOOD_TRAN_VOL, BLOOD_TRAN_REACT_TIMES, DECUBITAL_ULCER_TIMES, ALERGY_DRUGS, ADVERSE_REACTION_DRUGS, MR_VALUE, MR_QUALITY, FOLLOW_INDICATOR, FOLLOW_INTERVAL, FOLLOW_INTERVAL_UNITS, DIRECTOR, ATTENDING_DOCTOR, DOCTOR_IN_CHARGE, DISCHARGE_DISPOSITION, TOTAL_COSTS, TOTAL_PAYMENTS, CATALOG_DATE, CATALOGER, RESERVED01, RESERVED02, RESERVED03, RESERVED04, RESERVED05, RESERVED06, RESERVED07, RESERVED08, RESERVED09, RESERVED10, RESERVED_DATE01, RESERVED_DATE02, BODY_HEIGHT, BODY_WEIGHT, PATIENT_CONDITION, ABNORMAL
+        </sql>
+
+</mapper>

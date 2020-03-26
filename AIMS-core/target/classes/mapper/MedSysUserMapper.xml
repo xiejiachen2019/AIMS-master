@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aims.core.persistence.mapper.MedSysUserMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.aims.core.persistence.entity.MedSysUser">
+                    <id column="sysno" property="sysno" />
+                    <result column="user_id" property="userId" />
+                    <result column="login_name" property="loginName" />
+                    <result column="login_pwd" property="loginPwd" />
+                    <result column="salt" property="salt" />
+                    <result column="user_name" property="userName" />
+                    <result column="dept_id" property="deptId" />
+                    <result column="role_code" property="roleCode" />
+                    <result column="status" property="status" />
+                    <result column="memo" property="memo" />
+                    <result column="create_time" property="createTime" />
+                    <result column="update_time" property="updateTime" />
+                    <result column="creator" property="creator" />
+                    <result column="updator" property="updator" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            sysno, user_id, login_name, login_pwd, salt, user_name, dept_id, role_code, status, memo, create_time, update_time, creator, updator
+        </sql>
+
+</mapper>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aims.core.persistence.mapper.MedOperationCanceledMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.aims.core.persistence.entity.MedOperationCanceled">
+                    <id column="PATIENT_ID" property="patientId" />
+                    <result column="VISIT_ID" property="visitId" />
+                    <result column="CANCEL_ID" property="cancelId" />
+                    <result column="DEPT_STAYED" property="deptStayed" />
+                    <result column="SCHEDULED_DATE_TIME" property="scheduledDateTime" />
+                    <result column="OPERATING_ROOM" property="operatingRoom" />
+                    <result column="OPERATING_ROOM_NO" property="operatingRoomNo" />
+                    <result column="SEQUENCE" property="sequence" />
+                    <result column="DIAG_BEFORE_OPERATION" property="diagBeforeOperation" />
+                    <result column="PATIENT_CONDITION" property="patientCondition" />
+                    <result column="OPERATION_SCALE" property="operationScale" />
+                    <result column="ISOLATION_INDICATOR" property="isolationIndicator" />
+                    <result column="OPERATING_DEPT" property="operatingDept" />
+                    <result column="SURGEON" property="surgeon" />
+                    <result column="FIRST_ASSISTANT" property="firstAssistant" />
+                    <result column="SECOND_ASSISTANT" property="secondAssistant" />
+                    <result column="THIRD_ASSISTANT" property="thirdAssistant" />
+                    <result column="FOURTH_ASSISTANT" property="fourthAssistant" />
+                    <result column="ANESTHESIA_METHOD" property="anesthesiaMethod" />
+                    <result column="ANESTHESIA_DOCTOR" property="anesthesiaDoctor" />
+                    <result column="ANESTHESIA_ASSISTANT" property="anesthesiaAssistant" />
+                    <result column="BLOOD_TRAN_DOCTOR" property="bloodTranDoctor" />
+                    <result column="NOTES_ON_OPERATION" property="notesOnOperation" />
+                    <result column="ENTERED_BY" property="enteredBy" />
+                    <result column="CANCEL_REASON" property="cancelReason" />
+                    <result column="RESERVED1" property="reserved1" />
+                    <result column="OPERATION_ID" property="operationId" />
+                    <result column="RESERVED2" property="reserved2" />
+                    <result column="RESERVED3" property="reserved3" />
+                    <result column="RESERVED4" property="reserved4" />
+                    <result column="RESERVED5" property="reserved5" />
+                    <result column="RESERVED6" property="reserved6" />
+                    <result column="RESERVED7" property="reserved7" />
+                    <result column="RESERVED8" property="reserved8" />
+                    <result column="RESERVED9" property="reserved9" />
+                    <result column="RESERVED10" property="reserved10" />
+                    <result column="RESERVED11" property="reserved11" />
+                    <result column="RESERVED12" property="reserved12" />
+                    <result column="OPER_ID" property="operId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            PATIENT_ID, VISIT_ID, CANCEL_ID, DEPT_STAYED, SCHEDULED_DATE_TIME, OPERATING_ROOM, OPERATING_ROOM_NO, SEQUENCE, DIAG_BEFORE_OPERATION, PATIENT_CONDITION, OPERATION_SCALE, ISOLATION_INDICATOR, OPERATING_DEPT, SURGEON, FIRST_ASSISTANT, SECOND_ASSISTANT, THIRD_ASSISTANT, FOURTH_ASSISTANT, ANESTHESIA_METHOD, ANESTHESIA_DOCTOR, ANESTHESIA_ASSISTANT, BLOOD_TRAN_DOCTOR, NOTES_ON_OPERATION, ENTERED_BY, CANCEL_REASON, RESERVED1, OPERATION_ID, RESERVED2, RESERVED3, RESERVED4, RESERVED5, RESERVED6, RESERVED7, RESERVED8, RESERVED9, RESERVED10, RESERVED11, RESERVED12, OPER_ID
+        </sql>
+
+</mapper>

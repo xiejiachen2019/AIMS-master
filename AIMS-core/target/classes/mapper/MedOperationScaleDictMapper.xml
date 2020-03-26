@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aims.core.persistence.mapper.MedOperationScaleDictMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.aims.core.persistence.entity.MedOperationScaleDict">
+                    <id column="OPERATION_SCALE_CODE" property="operationScaleCode" />
+                    <result column="SERIAL_NO" property="serialNo" />
+                    <result column="OPERATION_SCALE_NAME" property="operationScaleName" />
+                    <result column="INPUT_CODE" property="inputCode" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            SERIAL_NO, OPERATION_SCALE_CODE, OPERATION_SCALE_NAME, INPUT_CODE
+        </sql>
+
+</mapper>

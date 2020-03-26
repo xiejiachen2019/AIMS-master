@@ -1,0 +1,37 @@
+2020-03-15 10:50:36.915 [main] INFO  com.aims.ser.AIMSApplication - Starting AIMSApplication on DESKTOP-3DVS7A3 with PID 15072 (C:\document\developCode\AIMS-master\AIMS-service\target\classes started by Steven Lee in C:\document\developCode\AIMS-master)
+2020-03-15 10:50:36.917 [main] INFO  com.aims.ser.AIMSApplication - The following profiles are active: datasource,test,log_prod
+2020-03-15 10:50:36.955 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ec3394b: startup date [Sun Mar 15 10:50:36 CST 2020]; root of context hierarchy
+2020-03-15 10:50:37.064 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.17.Final
+2020-03-15 10:50:38.233 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2020-03-15 10:50:38.244 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-03-15 10:50:38.252 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-15 10:50:38.252 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-03-15 10:50:38.344 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-15 10:50:38.344 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1389 ms
+2020-03-15 10:50:38.506 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-15 10:50:38.507 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-15 10:50:38.507 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-15 10:50:38.507 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-15 10:50:38.508 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-03-15 10:50:38.508 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-15 10:50:38.815 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ec3394b: startup date [Sun Mar 15 10:50:36 CST 2020]; root of context hierarchy
+2020-03-15 10:50:38.874 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-15 10:50:38.875 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-15 10:50:38.907 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-15 10:50:38.907 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-15 10:50:38.944 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-15 10:50:39.138 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-03-15 10:50:39.466 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: bff2dd78-42d4-4488-966c-39f3783974fc
+
+2020-03-15 10:50:39.572 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2020-03-15 10:50:39.652 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@143fefaf, org.springframework.security.web.context.SecurityContextPersistenceFilter@132e3594, org.springframework.security.web.header.HeaderWriterFilter@79df80a4, org.springframework.security.web.authentication.logout.LogoutFilter@22cb3d59, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4602f874, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f235107, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51888019, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18ffca6c, org.springframework.security.web.session.SessionManagementFilter@787988f4, org.springframework.security.web.access.ExceptionTranslationFilter@7a0ab480, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5dbab232]
+2020-03-15 10:50:39.895 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-15 10:50:39.908 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-03-15 10:50:39.917 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-03-15 10:50:39.931 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2020-03-15 10:50:39.934 [main] INFO  com.aims.ser.AIMSApplication - Started AIMSApplication in 3.465 seconds (JVM running for 5.149)
+2020-03-15 10:50:39.935 [main] INFO  com.aims.ser.AIMSApplication - AIMS Application is success!
+2020-03-15 10:50:59.849 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ec3394b: startup date [Sun Mar 15 10:50:36 CST 2020]; root of context hierarchy
+2020-03-15 10:50:59.851 [Thread-10] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aims.core.persistence.mapper.MedSysModulePerMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.aims.core.persistence.entity.MedSysModulePer">
+                    <id column="sysno" property="sysno" />
+                    <result column="role_code" property="roleCode" />
+                    <result column="per_code" property="perCode" />
+                    <result column="per_name" property="perName" />
+                    <result column="module_code" property="moduleCode" />
+                    <result column="module_name" property="moduleName" />
+                    <result column="sort" property="sort" />
+                    <result column="module_url" property="moduleUrl" />
+                    <result column="status" property="status" />
+                    <result column="create_time" property="createTime" />
+                    <result column="update_time" property="updateTime" />
+                    <result column="creator" property="creator" />
+                    <result column="updator" property="updator" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            sysno, role_code, per_code, per_name, module_code, module_name, sort, module_url, status, create_time, update_time, creator, updator
+        </sql>
+
+</mapper>

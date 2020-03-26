@@ -1,0 +1,31 @@
+##########################################################
+###################  测试环境的profile  ###################
+##########################################################
+spring:
+  profiles: test
+  datasource:
+    druid:
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://47.103.105.200:3306/icu?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL
+      username: root
+      password: Pass@word!123
+      driverClassName: com.mysql.cj.jdbc.Driver
+
+custom:
+  profiles: test
+  datasource:
+    druid:
+      type: com.alibaba.druid.pool.DruidDataSource
+      names: db1
+      db1:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://47.103.105.200:3306/his?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL
+        username: root
+        password: Pass@word!123
+
+logging:
+  level.root: info
+  level.com.icu: debug
+
+sequence:
+  workerId: 0

@@ -1,0 +1,21 @@
+#如果需要部署到不同的机器上，不同机器改这个值就可以了，最大31
+
+###################  mybatis-plus配置  ###################
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.aims.core.persistence.entity
+  global-config:
+    id-type: 0  #0:数据库ID自增   1:用户输入id  2:全局唯一id(IdWorker)  3:全局唯一ID(uuid)
+    db-column-underline: false #驼峰下划线转换
+    refresh-mapper: true
+  configuration:
+    map-underscore-to-camel-case: true   #配置返回数据库(column下划线命名&&返回java实体是驼峰命名)，自动匹配无需as（没开启这个，SQL需要写as： select user_id as userId）
+    cache-enabled: true #配置的缓存的全局开关
+    lazyLoadingEnabled: true #延迟加载的全局开关。当开启时，所有关联对象都会延迟加载
+    multipleResultSetsEnabled: true #是否允许单一语句返回多结果集
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试用
+
+
+
+
+
