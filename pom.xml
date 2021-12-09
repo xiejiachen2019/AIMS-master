@@ -24,7 +24,7 @@
         <slf4j.version>1.7.25</slf4j.version>
         <logback.version>1.2.3</logback.version>
         <springboot.version>1.5.14.RELEASE</springboot.version>
-        <jackson-databind-version>2.8.9</jackson-databind-version>
+        <jackson-databind-version>2.9.10.8</jackson-databind-version>
         <spring-web.version>4.3.18.RELEASE</spring-web.version>
         <mybatis-plus.version>2.3</mybatis-plus.version>
         <mysql-connector-java.version>8.0.11</mysql-connector-java.version>
